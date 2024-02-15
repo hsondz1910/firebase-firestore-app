@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="16dp">
+
+    <EditText
+            android:id="@+id/editTextCertificateName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Certificate Name" />
+
+    <EditText
+            android:id="@+id/editTextCertificateLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:hint="Certificate Level" />
+
+    <EditText
+            android:id="@+id/editTextCertificateType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Certificate Type" />
+
+    <EditText
+            android:id="@+id/editTextCertificateDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:hint="Certificate Date" />
+
+    <EditText
+            android:id="@+id/editTextCertificateScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Certificate score" />
+
+    <Button
+            android:id="@+id/buttonAddCertificate"
+            android:layout_width="match_parent"
+            android:layout_marginTop="24dp"
+            android:layout_height="wrap_content"
+            android:text="Save Certificate" />
+
+</LinearLayout>

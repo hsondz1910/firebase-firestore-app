@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                tools:context=".StudentActivity"
+>
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Students Management"
+            app:titleTextColor="@android:color/white"
+            android:background="?attr/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            android:layout_marginBottom="8dp"
+    />
+    <RelativeLayout
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+    >
+        <LinearLayout
+                android:padding="12dp"
+                android:id="@+id/action_search_sort"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+            <Button
+                    android:id="@+id/btnSortStudent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="Sort Students"
+                    android:layout_marginEnd="12dp"
+            />
+            <Button
+                    android:id="@+id/btnSearchStudents"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="Search Students"
+                    android:layout_marginStart="12dp"
+                    />
+        </LinearLayout>
+
+        <!-- RecyclerView to display the list of students -->
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/action_search_sort"
+                android:layout_marginTop="8dp"
+                android:scrollbars="vertical"/>
+    </RelativeLayout>
+
+</RelativeLayout>

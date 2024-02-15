@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              tools:context=".DetailStudentActivity"
+              android:padding="16dp">
+
+    <!-- Display Student Details -->
+
+    <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_student"
+            android:layout_gravity="center"
+            />
+
+    <TextView
+            android:id="@+id/textViewStudentID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginVertical="12dp"
+            android:text="StudentID: " />
+
+    <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+
+            android:text="Name: " />
+
+
+
+    <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginVertical="12dp"
+            android:layout_height="wrap_content"
+            android:text="Email: " />
+
+    <TextView
+            android:id="@+id/textViewFaculty"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Faculty: " />
+
+    <!-- Button to Navigate to Certificates List -->
+    <Button
+            android:id="@+id/btnViewCertificates"
+            android:layout_width="match_parent"
+            android:layout_marginTop="24dp"
+            android:layout_height="wrap_content"
+            android:text="View Certificates" />
+</LinearLayout>

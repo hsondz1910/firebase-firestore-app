@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:padding="6dp"
+              android:layout_marginTop="4dp"
+              android:background="@android:color/darker_gray"
+              android:layout_height="wrap_content">
+   <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+       <TextView
+               android:id="@+id/textViewName"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@android:color/white"
+               android:textSize="18sp"
+               android:textStyle="bold"
+               android:text="Huynh Nhat Hao"
+               android:layout_marginBottom="4dp" />
+
+       <TextView
+               android:id="@+id/textViewEmail"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@android:color/white"
+               android:textSize="16sp"
+               android:textStyle="bold"
+               android:text="huynhnhathao@gmail.com"
+               android:layout_marginBottom="4dp" />
+   </LinearLayout>
+
+    <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_height="match_parent">
+        <TextView
+                android:id="@+id/textViewStudentID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="StudentId: 520H0531"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="4dp" />
+
+        <TextView
+                android:id="@+id/textViewFaculty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Faculty: IT"
+                android:textSize="16sp"
+                android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".EditStudentActivity">
+
+    <TextView
+            android:id="@+id/editTextStudentID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student ID"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextStudentID"
+        android:layout_marginBottom="16dp"
+        android:hint="Name"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginBottom="16dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextFaculty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginBottom="16dp"
+        android:hint="Faculty"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <Button
+            android:id="@+id/btnEditStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Student"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/editTextFaculty"
+            android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
